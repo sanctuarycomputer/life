@@ -1,3 +1,6 @@
-{{#each model as |link|}}
-  <h6>{{link.title}}</h6>
-{{/each}}
+<div id='links'>
+  {{#each model as |link|}}
+    {{link-card link=link}}
+  {{/each}}
+</div>
+
