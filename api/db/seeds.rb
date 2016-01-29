@@ -1,3 +1,18 @@
+User.create({
+  email: 'malina@sanctuary.computer',
+  password: 'password'
+})
+
+User.create({
+  email: 'hugh@sanctuary.computer',
+  password: 'password'
+})
+
+User.create({
+  email: 'sebastian@sanctuary.computer',
+  password: 'password'
+})
+
 Link.create({
   title: 'Kinto',
   description: 'A lightweight JSON storage service with synchronisation and sharing abilities.',
