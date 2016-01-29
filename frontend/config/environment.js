@@ -20,6 +20,21 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV['ember-simple-auth'] = {
+      routeAfterAuthentication: 'links',
+      routeIfAlreadyAuthenticated: 'links'
+    };
+
+    ENV['ember-simple-auth-token'] = {
+      serverTokenEndpoint: 'http://localhost:3000/v1/users/token',
+      identificationField: 'identification',
+      passwordField: 'password',
+      tokenPropertyName: 'token',
+      authorizationPrefix: 'Bearer ',
+      authorizationHeaderName: 'Authorization',
+      headers: {},
+    };
+
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
